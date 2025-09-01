@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme{
+  --breakpoint-
+}
+#root {
+  margin: 0;
+  padding: 0;
+  
+}

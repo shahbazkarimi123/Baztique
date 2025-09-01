@@ -1,0 +1,6 @@
+const API_BASE_URL = "http://localhost:8080/baztique";
+
+function GetAllWatches () async{
+
+}
+export default getAllWatches;

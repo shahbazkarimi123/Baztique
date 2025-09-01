@@ -1,0 +1,27 @@
+interface Watch{
+    id:number;
+        price:number;
+        discount:number;
+        modelNumber:string;
+        trending:boolean;
+        brand:string;
+        collectionName:string;
+        brandCountry:string;
+        manufactureOrExported:string;
+        importedBy:string;
+        description:string;
+        watchGlassOrCrystal:string;
+        warranty;
+        waterResistance = waterResistance;
+        caseMaterial = caseMaterial;
+        gender = gender;
+        caseShape = caseShape;
+        dialColor = dialColor;
+        dialType = dialType;
+        caseSizeMM = caseSizeMM;
+        caseThicknessMM = caseThicknessMM;
+        strapColor = strapColor;
+        strapMaterial = strapMaterial;
+        strapWidthMM = strapWidthMM;
+        strapType = strapType;
+        careInstruction = careInstruction;
