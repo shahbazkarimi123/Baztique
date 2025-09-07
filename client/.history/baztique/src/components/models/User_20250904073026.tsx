@@ -1,0 +1,24 @@
+export interface User{
+        price:number;
+        discount:number;
+        modelNumber:string;
+        trending:boolean;
+        brand:string;
+        collectionName:string;
+        brandCountry:string;
+        manufactureOrExported:string;
+        importedBy:string;
+        description:string;
+        watchGlassOrCrystal:string;
+        warranty:number;
+        waterResistance:string;
+        caseMaterial:string;
+        gender:string;
+        caseShape:string;
+        dialColor:string;
+        dialType:string;
+        caseSizeMM:number;
+        caseThicknessMM:number;
+        strapColor:string;
+        
+}
