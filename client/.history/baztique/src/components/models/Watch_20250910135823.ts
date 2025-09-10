@@ -1,0 +1,30 @@
+export interface UploadForm {
+  brandName: string;
+  price: string;
+  discount: string;
+  modelNumber: string;
+  trend: boolean | null;
+  collectionName: string;
+  manufacture: string;
+  brandCountry: string;
+  importedBy: string;
+  watchGlassCrystal: string;
+  warranty: number | null;
+  waterResistance: string;
+  caseMaterial: string;
+  gender: string;
+  caseShape: string;
+  dialColor: string;
+  dialType: string;
+  caseSizeMM: string;
+  caseThicknessMM: string;
+  strapColor: string;
+  strapMaterial: string;
+  strapWidthMM: string;
+  strapType: string;
+  careInstruction: string;
+  firstImage: File | null;
+  secondImage: File | null;
+  thirdImage: File | null;
+  fourthImage: File | null;
+}
