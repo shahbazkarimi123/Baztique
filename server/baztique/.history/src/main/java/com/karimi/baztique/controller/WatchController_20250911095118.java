@@ -1,0 +1,78 @@
+package com.karimi.baztique.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.karimi.baztique.model.Watch;
+import com.karimi.baztique.service.WatchService;
+
+@RestController
+@RequestMapping(path = "/baztique")
+public class WatchController {
+    @Autowired
+    private WatchService watchService;
+
+    @GetMapping(path = "/watches")
+    public List<Watch> getAllWatches() {
+        return watchService.getAllWatch();
+    }
+
+    @GetMapping(path = "/watches/id/{id}")
+    public Watch getWatchById(@PathVariable long id) {
+        return watchService.getWatchById(id);
+    }
+
+    @GetMapping(path = "/watches/gender/{gender}")
+    public List<Watch> getWatchesByGender(@PathVariable String gender) {
+        return watchService.getWatchesByGender(gender);
+
+    }
+
+    @PostMapping(path="/watches/upload")
+    public ResponseEntity<Watch> uploadWatch(
+        @RequestParam String brandName,
+            @RequestParam(required = false) Integer price,
+            @RequestParam(required = false) Integer discount,
+            @RequestParam String modelNumber,
+            @RequestParam Boolean trend,
+            @RequestParam String collectionName,
+            @RequestParam String manufactureOrExported,
+            @RequestParam String brandCountry,
+            @RequestParam(required = false) String importedBy,
+            @RequestParam String watchGlassCrystal,
+            @RequestParam(required = false) Integer warranty,
+            @RequestParam String waterResistance,
+            @RequestParam String caseMaterial,
+            @RequestParam String gender,
+            @RequestParam String caseShape,
+            @RequestParam String dialColor,
+            @RequestParam String dialType,
+            @RequestParam(required = false) Integer caseSizeMM,
+            @RequestParam(required = false) Integer caseThicknessMM,
+            @RequestParam String strapColor,
+            @RequestParam String strapMaterial,
+            @RequestParam(required = false) Integer strapWidthMM,
+            @RequestParam String strapType,
+            @RequestParam(required = false) String careInstruction,
+            @RequestParam String description,
+            @RequestParam(required = false) MultipartFile firstImage,
+            @RequestParam(required = false) MultipartFile secondImage,
+            @RequestParam(required = false) MultipartFile thirdImage,
+            @RequestParam(required = false) MultipartFile fourthImage
+    )throws IOException{
+        
+        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+
+    }
+
+}
