@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* @theme{
+  --breakpoint-sm:385px;
+  --breakpoint-md: 640px;
+} */
+#root {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.home-page-body{
+    background-color: #c4fcef;
+background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    padding-top: calc(var(--spacing) * 16); 
+}
+  
