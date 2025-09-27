@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* @theme{
+  --breakpoint-sm:385px;
+  --breakpoint-md: 640px;
+} */
+#root {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.home-page-body{
+    padding-top: calc(var(--spacing) * 16); 
+}
+
+h1 {
+  color: #1e3a8a; /* Tailwind's blue-800, for example */
+}
+p {
+  color: #374151; /* Tailwind's gray-700 */
+}
